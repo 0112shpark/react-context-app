@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Products from "./Products";
 import Options from "./Options";
+import ErrorBanner from "./Error";
 
 const Type = ({ orderType }) => {
   const [Items, setItems] = useState([]);
+  const [Error, setError] = useState(false);
+
   useEffect(() => {
     loadItems(orderType);
   }, [orderType]);
@@ -14,7 +17,7 @@ const Type = ({ orderType }) => {
       const response = await axios.get(`http://localhost:4000/${orderType}`);
       setItems(response.data);
     } catch (error) {
-      console.error(error);
+      setError(true);
     }
   };
 
@@ -24,10 +27,14 @@ const Type = ({ orderType }) => {
     <ItemComponent
       key={item.name}
       name={item.name}
+      description={item.description}
       imagePath={item.imagePath}
     ></ItemComponent>
   ));
 
+  if (Error) {
+    return <ErrorBanner message="에러가 발생했습니다."></ErrorBanner>;
+  }
   return (
     <div>
       <h2>주문 종류</h2>
