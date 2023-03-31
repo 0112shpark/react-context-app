@@ -16,7 +16,7 @@ Creating a simple ordering application using `react-context`.
 
 ## 💡Features
 
--
+- Disable `submit button` on Summary Page when check-box is not checked.
 
 ## ⛏️Built with
 
