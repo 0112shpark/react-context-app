@@ -17,6 +17,7 @@ Creating a simple ordering application using `react-context`.
 ## 💡Features
 
 - Disable `submit button` on Summary Page when check-box is not checked.
+- Struct a simple `node.js` server and get data from the server.
 
 ## ⛏️Built with
 
@@ -46,23 +47,9 @@ Creating a simple ordering application using `react-context`.
 
 - `npm install axios --save`
 
-5. Install `styled component module`.**(on your terminal.)**
+5.
 
-- `npm install styled-components --save`
-
-6. Install `react-router-dom`.**(on your terminal.)**
-
-- `npm install react-router-dom --save`
-
-7. Install `swiper`.**(on your terminal.)**
-
-- `npm install swiper --save`
-
-8. Install `firebase`.**(on your terminal.)**
-
-- `npm install firebase --save`
-
-9. Run development server with following command.**(on your terminal.)**
+6.  Run development server with following command.**(on your terminal.)**
 
 - `npm start`
 
