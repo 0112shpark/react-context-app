@@ -25,7 +25,6 @@ Creating a simple ordering application using `react-context`.
 - <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 - <img src ="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
 - <img src ="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-- <img src ="">
 - <img src="https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white">
 
 ## 🏃Getting Started
@@ -49,7 +48,7 @@ Creating a simple ordering application using `react-context`.
 
 5.
 
-6.  Run development server with following command.**(on your terminal.)**
+6. Run development server with following command.**(on your terminal.)**
 
 - `npm start`
 
