@@ -50,7 +50,7 @@ Creating a simple ordering application using `react-context`.
 
 6. Run development server with following command.**(on your terminal.)**
 
-- `npm start`
+- `npm run start`
 
 ## 📚Issues
 
