@@ -31,6 +31,9 @@ const Type = ({ orderType }) => {
       name={item.name}
       description={item.description}
       imagePath={item.imagePath}
+      updateItemcount={(itemName, newItemCount) =>
+        updateItemcount(itemName, newItemCount, orderType)
+      }
     ></ItemComponent>
   ));
 
@@ -41,7 +44,7 @@ const Type = ({ orderType }) => {
     <div>
       <h2>주문 종류</h2>
       <p>하나의 가격</p>
-      <p>총 가격:</p>
+      <p>총 가격: ${OrderData.totals[orderType]}</p>
       <div
         style={{
           display: "flex",

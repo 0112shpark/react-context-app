@@ -53,6 +53,6 @@ export function OrderContextProvider(props) {
   }, [orderCounts, totals]);
 
   return (
-    <OrderContext.Provider value={value}>{...props}</OrderContext.Provider>
+    <OrderContext.Provider value={value} {...props}></OrderContext.Provider>
   );
 }
